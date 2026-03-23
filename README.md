@@ -12,32 +12,32 @@ A wireless, hotswap, ortholinear split keyboard powered by [ZMK firmware](https:
 
 ---
 
-## ✨ Features
+## Features
 
 | | |
 |---|---|
 | **Layout** | Plank-ish 40 % when magnetically attached · Ortholinear 24 + 24 when split |
 | **Hotswap** | Cherry MX compatible hotswap sockets — swap switches without soldering |
-| **Wireless** | Bluetooth Low Energy via dual Nice!Nano v2 (nRF52840) controllers |
+| **Wireless** | Bluetooth Low Energy via dual Nice!Nano v2 Clones (nRF52840)  |
 | **Customizable** | Remap keys live with [ZMK Studio](https://zmk.studio/) — no reflashing required |
 | **Battery** | 801350 3.7 V Li-Po per half with on/off slide switch |
 | **3D Printed** | Fully printable case with magnet attachment system |
 
 ---
 
-## 🔗 Links
+## Links
 
 | Resource | URL |
 |---|---|
 | **Build Video** | [YouTube](https://www.youtube.com/watch?v=XWv2SwuP9wc) |
 | **PDF Manual** | [20_20 split keyboard BOM and instructions.pdf](Media/20_20%20split%20keyboard%20BOM%20and%20instructions.pdf) |
 | **ZMK Studio** | [zmk.studio](https://zmk.studio/) |
-| **3D Printable Files** | *🔗 Link coming soon* |
+| **3D Printable Files** | [MakerWorld](https://makerworld.com/en/models/2563301/)|
 | **ZMK Docs** | [zmk.dev](https://zmk.dev/) |
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 | Tool | Purpose |
 |---|---|
@@ -48,7 +48,7 @@ A wireless, hotswap, ortholinear split keyboard powered by [ZMK firmware](https:
 
 ---
 
-## ⌨️ Default Keymap
+## Default Keymap
 
 
 
@@ -60,7 +60,7 @@ User keymap is located at [`config/ortho20_20.keymap`](config/ortho20_20.keymap)
 
 ---
 
-## 🎛️ Combos
+## Combos
 
 ### ZMK Studio Unlock
 
@@ -78,7 +78,7 @@ Hold two bottom-row keys simultaneously to unlock ZMK Studio:
 
 ---
 
-## 🛒 Bill of Materials
+## Bill of Materials
 
 > [!NOTE]
 > **Additionally required (not listed below):** soldering iron, solder, [hookup wires](https://www.aliexpress.com/item/1005005048098404.html), [rubber feet](https://www.aliexpress.com/item/1005002705337380.html), heatshrink tubing, hot glue, and superglue.
@@ -102,7 +102,7 @@ Hold two bottom-row keys simultaneously to unlock ZMK Studio:
 
 ---
 
-## 🔧 Build Instructions
+## Build Instructions
 
 > [!TIP]
 > Watch the full **[Build Video on YouTube](https://www.youtube.com/watch?v=XWv2SwuP9wc)** for a detailed wiring walkthrough.
@@ -127,38 +127,18 @@ Hold two bottom-row keys simultaneously to unlock ZMK Studio:
 
 ---
 
-## 📌 Pinout
+## Pinout
 
 <p align="center">
   <img src="Media/pinout.png" alt="Wiring pinout diagram" width="720" />
 </p>
-
-### Left Half
-
-| | Pin 0 | Pin 1 | Pin 2 | Pin 3 | Pin 4 | Pin 5 |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Columns** | 106 | 104 | 011 | 100 | 002 | 115 |
-
-| | Pin 0 | Pin 1 | Pin 2 | Pin 3 |
-|---|:---:|:---:|:---:|:---:|
-| **Rows** | 113 | 111 | 010 | 009 |
-
-### Right Half
-
-| | Pin 0 | Pin 1 | Pin 2 | Pin 3 | Pin 4 | Pin 5 |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Columns** | 106 | 104 | 011 | 100 | 024 | 022 |
-
-| | Pin 0 | Pin 1 | Pin 2 | Pin 3 |
-|---|:---:|:---:|:---:|:---:|
-| **Rows** | 113 | 111 | 010 | 009 |
 
 > [!NOTE]
 > Columns 0–3 and all rows share the same pins on both halves. Columns 4–5 differ between left (`002`, `115`) and right (`024`, `022`).
 
 ---
 
-## ⚡ Firmware
+## Firmware
 
 Firmware is built automatically via GitHub Actions. To install:
 
@@ -185,12 +165,6 @@ For convenience, you can download the premade firmware here:
 ### ZMK Studio
 
 This firmware ships with **ZMK Studio** enabled on the left half. Connect via USB, open [zmk.studio](https://zmk.studio/), and remap your keys on the fly.
-
----
-
-## 📝 License
-
-This project is open source. Feel free to fork, modify, and build your own!
 
 ---
 
