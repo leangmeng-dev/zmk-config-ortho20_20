@@ -26,6 +26,4 @@ include:
 
   - board: nice_nano_v2
     shield: ortho20_20_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: ortho20_20_right_studio
+    artifact-name: ortho20_20_right

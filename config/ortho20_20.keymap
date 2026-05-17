@@ -8,18 +8,6 @@
 #define RAISE 2
 
 / {
-
-    chosen {
-        zmk,physical-layout = &ortho_transform;
-    };
-
-    physical_layouts {
-        ortho_transform: ortho_transform {
-            compatible = "zmk,physical-layout";
-            display-name = "Ortho20";
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
